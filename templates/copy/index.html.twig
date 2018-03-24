@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Copy!{% endblock %}
+{% block body %}
+    {{head|raw}}
+    {{ form_start(form) }}
+    {{ form_row(form.nume1,{'value': value1 }) }}
+    {{ form_row(form.submit) }}
+    {{ form_row(form.nume2,{'value': value }) }}
+    {{ form_end(form) }}
+{% endblock %}
